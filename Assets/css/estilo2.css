@@ -1,0 +1,35 @@
+.tabla {
+	margin:0px;padding:0px;
+	width:100%;
+	box-shadow: 10px 10px 5px #888888;
+	border:1px solid #000000;
+	
+}
+
+.tabla table
+{
+	width:100%;
+}
+
+.tabla tr,td
+{ 
+	background-color:#ffaa56; 
+	border:1px solid #000000;
+	border-width:0px 1px 1px 0px;
+	text-align:center;
+	padding:0px;
+	font-size:14px;
+	font-family:Arial;
+	font-weight:normal;
+	color:#000000;
+}
+
+.footer
+{
+	background-color:#ffaa56; 
+}
+
+.encabezado
+{
+	background-color:#ffaa56;
+}

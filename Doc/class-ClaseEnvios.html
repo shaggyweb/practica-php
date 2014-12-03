@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ClaseEnvios | Documentacion Practica</title>
+
+	<link rel="stylesheet" href="resources/style.css?331665766">
+
+</head>
+
+<body>
+<div id="left">
+	<div id="menu">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+				<li class="active">
+					<a href="namespace-None.html">
+						None					</a>
+
+						</li>
+				<li>
+					<a href="namespace-PHP.html">
+						PHP					</a>
+
+						</li>
+			</ul>
+		</div>
+
+		<hr>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-ClaseEnvios.html">ClaseEnvios</a></li>
+				<li><a href="class-ClaseUsuarios.html">ClaseUsuarios</a></li>
+				<li><a href="class-Db.html">Db</a></li>
+				<li><a href="class-EnviosCtrl.html">EnviosCtrl</a></li>
+				<li><a href="class-FrontalCtrl.html">FrontalCtrl</a></li>
+				<li><a href="class-UsuarioCtrl.html">UsuarioCtrl</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="">
+		<input type="hidden" name="ie" value="UTF-8">
+		<input type="text" name="q" class="text" placeholder="Search">
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-None.html" title="Summary of None"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+			</li>
+			<li>
+				<a href="todo.html" title="Todo list"><span>Todo</span></a>
+			</li>
+		</ul>
+		<ul>
+		</ul>
+	</div>
+
+<div id="content" class="class">
+	<h1>Class ClaseEnvios</h1>
+
+
+	<div class="description">
+	<p>Clase que gestiona las distintas consultas de los envíos</p>
+
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		
+		
+
+				<b>Author:</b>
+				Mario Vilches Nieves
+<br>
+		<b>Located at</b> <a href="source-class-ClaseEnvios.html#5-296" title="Go to source code">app/models/clase_envios.php</a><br>
+	</div>
+
+
+
+	<table class="summary methods" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#___construct">#</a>
+		<code><a href="source-class-ClaseEnvios.html#18-24" title="Go to source code">__construct</a>( )</code>
+
+		<div class="description short">
+			<p>Constructor de la clase envíos</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Constructor de la clase envíos</p>
+
+
+
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="select_provincias" id="_select_provincias">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_select_provincias">#</a>
+		<code><a href="source-class-ClaseEnvios.html#26-41" title="Go to source code">select_provincias</a>( )</code>
+
+		<div class="description short">
+			<p>Consulta que devuelve las provincias con su código</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta que devuelve las provincias con su código</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|null</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="listar" id="_listar">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_listar">#</a>
+		<code><a href="source-class-ClaseEnvios.html#43-61" title="Go to source code">listar</a>( )</code>
+
+		<div class="description short">
+			<p>Consulta que lista todos los envíos</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta que lista todos los envíos</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|null</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="envio_mod" id="_envio_mod">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_envio_mod">#</a>
+		<code><a href="source-class-ClaseEnvios.html#63-84" title="Go to source code">envio_mod</a>( <span>integer <var>$cod_envio</var></span> )</code>
+
+		<div class="description short">
+			<p>Consulta que muestra el envío que se va a modificar</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta que muestra el envío que se va a modificar</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cod_envio</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|null</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="modificar" id="_modificar">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_modificar">#</a>
+		<code><a href="source-class-ClaseEnvios.html#86-108" title="Go to source code">modificar</a>( <span>array <var>$datos_envios</var></span> )</code>
+
+		<div class="description short">
+			<p>Consulta de modificación de un envío</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta de modificación de un envío</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$datos_envios</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="listar_recepcion" id="_listar_recepcion">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_listar_recepcion">#</a>
+		<code><a href="source-class-ClaseEnvios.html#110-129" title="Go to source code">listar_recepcion</a>( <span>integer <var>$cod</var></span> )</code>
+
+		<div class="description short">
+			<p>Consulta que lista el envío al cual queremos añadir la recepción</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta que lista el envío al cual queremos añadir la recepción</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cod</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|null</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="anadir" id="_anadir">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_anadir">#</a>
+		<code><a href="source-class-ClaseEnvios.html#149-171" title="Go to source code">anadir</a>( <span>array <var>$datos_envio</var></span>, <span><code><a href="class-DateTime.html">DateTime</a></code> <var>$fecha_creacion</var></span> )</code>
+
+		<div class="description short">
+			<p>Consulta que añade un nuevo envío a la base de datos</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta que añade un nuevo envío a la base de datos</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$datos_envio</var></dt>
+					<dd>
+</dd>
+					<dt><var>$fecha_creacion</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="envio_borrar" id="_envio_borrar">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_envio_borrar">#</a>
+		<code><a href="source-class-ClaseEnvios.html#173-191" title="Go to source code">envio_borrar</a>( <span>integer <var>$cod_envio</var></span> )</code>
+
+		<div class="description short">
+			<p>Consulta que muestra el envío a borrar</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta que muestra el envío a borrar</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cod_envio</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|null</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="borrar" id="_borrar">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_borrar">#</a>
+		<code><a href="source-class-ClaseEnvios.html#193-202" title="Go to source code">borrar</a>( <span>integer <var>$cod_envio</var></span> )</code>
+
+		<div class="description short">
+			<p>Consulta que elimina un envío de la base de datos</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta que elimina un envío de la base de datos</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$cod_envio</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="consultar" id="_consultar">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_consultar">#</a>
+		<code><a href="source-class-ClaseEnvios.html#204-229" title="Go to source code">consultar</a>( <span>string <var>$destinatario</var></span>, <span>string <var>$poblacion</var></span>, <span>string <var>$estado</var></span> )</code>
+
+		<div class="description short">
+			<p>Consulta que nos muestra el resultado de una búsqueda</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta que nos muestra el resultado de una búsqueda</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$destinatario</var></dt>
+					<dd>
+</dd>
+					<dt><var>$poblacion</var></dt>
+					<dd>
+</dd>
+					<dt><var>$estado</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|null</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="actualizar_recepcion" id="_actualizar_recepcion">
+
+		<td class="attributes"><code>
+			 public 
+
+			
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_actualizar_recepcion">#</a>
+		<code><a href="source-class-ClaseEnvios.html#231-244" title="Go to source code">actualizar_recepcion</a>( <span>array <var>$datos_envio</var></span>, <span><code><a href="class-DateTime.html">DateTime</a></code> <var>$fecha_entrega</var></span> )</code>
+
+		<div class="description short">
+			<p>Consulta para actualizar el estado de un envío a entregado</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta para actualizar el estado de un envío a entregado</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$datos_envio</var></dt>
+					<dd>
+</dd>
+					<dt><var>$fecha_entrega</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="numero_envios" id="_numero_envios">
+
+		<td class="attributes"><code>
+			 public 
+
+			array
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_numero_envios">#</a>
+		<code><a href="source-class-ClaseEnvios.html#246-261" title="Go to source code">numero_envios</a>( )</code>
+
+		<div class="description short">
+			<p>Consulta para calcular el número total de envíos para la paginación</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta para calcular el número total de envíos para la paginación</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="ListarRango" id="_ListarRango">
+
+		<td class="attributes"><code>
+			 public 
+
+			array|null
+			
+			</code>
+		</td>
+
+		<td class="name"><div>
+		<a class="anchor" href="#_ListarRango">#</a>
+		<code><a href="source-class-ClaseEnvios.html#263-281" title="Go to source code">ListarRango</a>( <span>integer <var>$inicio</var></span>, <span>integer <var>$cantidad</var></span> )</code>
+
+		<div class="description short">
+			<p>Consulta para listar los envíos en un determinado rango, para la paginación</p>
+
+		</div>
+
+		<div class="description detailed hidden">
+			<p>Consulta para listar los envíos en un determinado rango, para la paginación</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="list"><dl>
+					<dt><var>$inicio</var></dt>
+					<dd>
+</dd>
+					<dt><var>$cantidad</var></dt>
+					<dd>
+</dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="list">
+					<code>array|null</code>
+				</div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+	<div id="footer">
+		Documentacion Practica API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+</div>
+<script src="resources/combined.js?721046668"></script>
+<script src="elementlist.js?2741430751"></script>
+</body>
+</html>
