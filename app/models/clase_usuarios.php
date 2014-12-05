@@ -25,8 +25,8 @@ class ClaseUsuarios
 	
 	/**
 	 * Consulta que muestra el usuario en base al nombre y clave introducida
-	 * @param string $nombre
-	 * @param string $clave
+	 * @param string $nombre Nombre del usuario
+	 * @param string $clave Password del usuario
 	 * @return array|NULL
 	 */
 	function login($nombre,$clave)
@@ -70,7 +70,7 @@ class ClaseUsuarios
 	
 	/**
 	 * Consulta para añadir un usuario
-	 * @param array $datos_usuario
+	 * @param array $datos_usuario Datos de todos los campos del usuario
 	 */
 	function anadir_usuario($datos_usuario)
 	{
@@ -84,7 +84,7 @@ class ClaseUsuarios
 	
 	/**
 	 * Consulta que selecciona el usuario a borrar
-	 * @param int $cod_usuario
+	 * @param int $cod_usuario Código del usuario
 	 * @return array|NULL
 	 */
 	function usuario_borrar($cod_usuario)
@@ -104,7 +104,7 @@ class ClaseUsuarios
 	
 	/**
 	 * Consulta que elimina un usuario de la base de datos
-	 * @param int $cod_usuario
+	 * @param int $cod_usuario Código del usuario
 	 */
 	function borrar_usuario($cod_usuario)
 	{
@@ -115,7 +115,7 @@ class ClaseUsuarios
 	
 	/**
 	 * Consulta que selecciona el usuario a modificar
-	 * @param int $cod_usuario
+	 * @param int $cod_usuario Código del usuario
 	 * @return array|NULL
 	 */
 	function usuario_mod($cod_usuario)
@@ -135,7 +135,7 @@ class ClaseUsuarios
 	
 	/**
 	 * Consulta que modifica un usuario
-	 * @param array $datos_usuario
+	 * @param array $datos_usuario Datos de todos los campos del usuario
 	 */
 	function modificar_usuario($datos_usuario)
 	{

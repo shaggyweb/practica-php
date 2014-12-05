@@ -3,14 +3,14 @@
 include_once 'clase_DB.php';
 
 /**
- * Clase que gestiona las distintas consultas de los envíos
+ * Clase que gestiona las distintas consultas de los envÃ­os
  * @author Mario Vilches Nieves
  *
  */
 class ClaseEnvios
 {
 /**
- * Instancia de la clase conexión
+ * Instancia de la clase conexiÃ³n
  * @var unknown
  */
 private $instancia_conexion; //instancia de la clase conexion
@@ -24,7 +24,7 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 
 	/**
-	 * Consulta que devuelve las provincias con su código
+	 * Consulta que devuelve las provincias con su cÃ³digo
 	 * @return array|NULL
 	 */
 	function select_provincias()
@@ -41,7 +41,7 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 	
 	/**
-	 * Consulta que lista todos los envíos
+	 * Consulta que lista todos los envÃ­os
 	 * @return array|NULL
 	 */
 	function listar()
@@ -61,8 +61,8 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 	
 	/**
-	 * Consulta que muestra el envío que se va a modificar
-	 * @param int $cod_envio
+	 * Consulta que muestra el envÃ­o que se va a modificar
+	 * @param int $cod_envio Código de envío que queremos modificar
 	 * @return array|NULL
 	 */
 	function envio_mod($cod_envio)
@@ -84,8 +84,8 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 	
 	/**
-	 * Consulta de modificación de un envío
-	 * @param array $datos_envios
+	 * Consulta de modificaciÃ³n de un envÃ­o
+	 * @param array $datos_envios Contiene los datos de los campos del envío
 	 */
 	function modificar($datos_envios)
 	{
@@ -108,8 +108,8 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 	
 	/**
-	 * Consulta que lista el envío al cual queremos añadir la recepción
-	 * @param int $cod
+	 * Consulta que lista el envÃ­o al cual queremos aÃ±adir la recepciÃ³n
+	 * @param int $cod Código de envío que vamos a cambiar su estado
 	 * @return array|NULL
 	 */
 	function listar_recepcion($cod)
@@ -128,28 +128,10 @@ private $instancia_conexion; //instancia de la clase conexion
 		return $envios;
 	}
 	
-	/*function listar_paginacion()
-	{
-	
-		$sql_envios ='select *,tbl_provincias.nombre as prov from envio,tbl_provincias where envio.provincia=tbl_provincias.cod;';//modifcar la consulta
-		$stmt2 = $this->instancia_conexion->Consulta($sql_envios);
-	
-		$envios=array();
-	
-		while ($registro = $this->instancia_conexion->LeeRegistro($stmt2))
-		{
-			$envios[]=$registro;
-		}
-	
-		return $envios;
-		
-		https://nafiux.com/blog/2010/10/04/paginacion-de-resultados-con-php-y-mysql/
-	}*/
-	
 	/**
-	 * Consulta que añade un nuevo envío a la base de datos
-	 * @param array $datos_envio
-	 * @param DateTime $fecha_creacion
+	 * Consulta que aÃ±ade un nuevo envÃ­o a la base de datos
+	 * @param array $datos_envio Contiene los datos de los campos del envío
+	 * @param DateTime $fecha_creacion Fecha de creación del pedido
 	 */
 	function anadir($datos_envio,$fecha_creacion)
 	{
@@ -171,8 +153,8 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 	
 	/**
-	 * Consulta que muestra el envío a borrar
-	 * @param int $cod_envio
+	 * Consulta que muestra el envÃ­o a borrar
+	 * @param int $cod_envio Código de envío que queremos borrar
 	 * @return array|NULL
 	 */
 	function envio_borrar($cod_envio)
@@ -191,8 +173,8 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 	
 	/**
-	 * Consulta que elimina un envío de la base de datos
-	 * @param int $cod_envio
+	 * Consulta que elimina un envÃ­o de la base de datos
+	 * @param int $cod_envio Código del envío que se va a borrar
 	 */
 	function borrar($cod_envio)
 	{
@@ -202,10 +184,10 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 	
 	/**
-	 * Consulta que nos muestra el resultado de una búsqueda
-	 * @param string $destinatario
-	 * @param string $poblacion
-	 * @param string $estado
+	 * Consulta que nos muestra el resultado de una bÃºsqueda
+	 * @param string $destinatario Destinatario del envío que queremos buscar
+	 * @param string $poblacion Población del envío que queremos buscar
+	 * @param string $estado Estado del pedido que queremos buscar
 	 * @return array|NULL
 	 */
 	function consultar($destinatario,$poblacion,$estado)
@@ -229,9 +211,9 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 	
 	/**
-	 * Consulta para actualizar el estado de un envío a entregado
-	 * @param array $datos_envio
-	 * @param DateTime $fecha_entrega
+	 * Consulta para actualizar el estado de un envÃ­o a entregado
+	 * @param array $datos_envio Datos de todos los campos del envío
+	 * @param DateTime $fecha_entrega Fecha de entrega del pedido
 	 */
 	function actualizar_recepcion($datos_envio,$fecha_entrega)
 	{
@@ -244,7 +226,7 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 	
 	/**
-	 * Consulta para calcular el número total de envíos para la paginación
+	 * Consulta para calcular el nÃºmero total de envÃ­os para la paginaciÃ³n
 	 * @return array
 	 */
 	public function numero_envios(){
@@ -261,9 +243,9 @@ private $instancia_conexion; //instancia de la clase conexion
 	}
 	
 	/**
-	 * Consulta para listar los envíos en un determinado rango, para la paginación
-	 * @param int $inicio
-	 * @param int $cantidad
+	 * Consulta para listar los envÃ­os en un determinado rango, para la paginaciÃ³n
+	 * @param int $inicio Inicio de registro por el que empieza la lista
+	 * @param int $cantidad Número de registros que muestra la lista
 	 * @return array|NULL
 	 */
 	public function ListarRango($inicio, $cantidad){
@@ -280,17 +262,4 @@ private $instancia_conexion; //instancia de la clase conexion
 		return $envios;
 	}
 	
-	/*function numero_envios()
-	{
-		$sql_envios="select count(*) from envios";
-		$stmt2 = $this->instancia_conexion->Consulta($sql_envios);
-		
-		while ($registro = $this->instancia_conexion->LeeRegistro($stmt2))
-		{
-			$envios[]=$registro;
-		}
-		
-		return $envios;
-		
-	}*/
 }
