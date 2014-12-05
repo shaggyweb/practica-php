@@ -33,3 +33,8 @@
 {
 	background-color:#ffaa56;
 }
+
+.centrado{
+  margin-left: auto;
+  margin-right: auto;
+}

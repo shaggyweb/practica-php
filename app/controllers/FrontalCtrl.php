@@ -57,22 +57,11 @@ class FrontalCtrl
 			if(isset($_SESSION['dentro']))
 			{
 				$ruta = 'menu';
-				//$ruta = 'login';
-				echo "esta dentro";
-				echo "<pre>";
-				print_r($_SESSION['dentro']);
-				echo "</pre>";
-
 			}
 			else
 			{
 				$ruta = 'login';
-				/*echo "<pre>";
-				print_r($_SESSION['dentro']);
-				echo "no esta dentro";
-				echo "</pre>";*/
 			}
-			//$ruta='menu';
 		}
 		
 		
